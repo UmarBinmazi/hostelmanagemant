@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Hostel - Ambad</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(2, 7, 17);
+        color: aliceblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body::-webkit-scrollbar{
+        width: 1px;
+    }
+    header{
+        padding-right: 10px;
+        background: black;
+        display: flex;
+        align-items: center;
+        place-content: space-between;
+    }
+    header .logo img {
+        height: 90px;
+    }
+    header nav a{
+        padding: 7px;
+        color:aliceblue;
+        text-decoration: none;
+    }
+    header nav a:hover{
+        color: rgb(32, 224, 224);
+    }
+    section{
+        width: 90%;
+        margin: auto;
+    }
+    section p{
+        text-align: justify;
+    }
+    section a{
+        text-decoration: none;
+        color: rgb(32, 224, 224);
+    }
+    .sec-1{
+        height: 90vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        place-content: space-between;
+        gap:15px;
+        background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7),#000000),  url(Images/hostel.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sec-1 .slogan{
+        width: 40%;
+        padding: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+    }
+    .sec-1 .slogan h2{
+        color: rgb(32, 224, 224);
+    }
+    .sec-1 .slogan p{
+        text-align: justify;
+    }
+    .sec-1 .slider 
+    {
+        position: relative;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+    .slider img{
+        margin: auto;
+        height: 270px;
+    }
+    #slideimg{
+        animation: anim 3s linear infinite;
+    }
+    @keyframes anim{
+        0%{
+            opacity: 0;
+        }
+        20%{
+            opacity: 1;
+        }
+    }
+    footer{
+        padding: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        place-content: center;
+        gap: 30px;
+        background-color: #000000;
+    }
+    footer .col{
+        display: flex;
+        flex-direction: column;
+    }
+    footer a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    @media screen and (max-width:750px){
+        .sec-1{
+            flex-direction: column-reverse;
+        }
+        .sec-1 .slogan,.sec-1 .slider{
+            width: 90%;
+            margin: auto;
+        }
+        footer{
+            flex-direction: column;
+        }
+    }
+    
+</style>
+
+<body>
+    <header>
+        <div class="logo"> <img src="Images/logo.png" alt="" loading="lazy"></div>
+        <nav>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="admin/index.php">Admin</a>
+        </nav>
+    </header>
+    <main>
+        <section class="sec-1">
+            <div class="slogan">
+                <h2>FEEL HOME, AWAY FROM HOME!</h2>
+                <p>Peace of mind for parents, comfort for students - our hostel and mess offers the best of both worlds</p>
+            </div>
+            <div class="slider">
+                <img src="" id="slideimg" alt="">
+            </div>
+        </section>
+        <section>
+            <p>Welcome to VIP Hostel, where we offer students the ultimate combination of luxury and affordability. Our hostel has been designed to provide a comfortable and convenient living experience for students, with top-of-the-line amenities and services that cater to all of your needs.</p>
+            <p>Our rooms are spacious, clean, and well-maintained, with comfortable beds, study tables, and ample storage space. We also offer a variety of room options to suit your preferences, including single, double, and triple occupancy rooms.</p>
+            <p>Our hostel is equipped with all the modern facilities that you would expect from a top-notch accommodation, including high-speed internet, 24-hour security, and a fully-equipped kitchen and dining area. Additionally, we have a common room for socializing and a recreation area for indoor games to make your stay more fun and enjoyable.</p>
+            <p>But what really sets us apart is our dedicated team of staff, who are always on hand to help you with any questions or concerns you may have. We understand that being away from home can be difficult, so we strive to make your stay as comfortable and stress-free as possible.       </p>
+            <p>So whether you're a student looking for a place to call home during your studies, or just looking for a comfortable and affordable place to stay while on the go, VIP Hostel is the perfect choice.</p>
+            <p>Choose VIP Hostel and experience the best of student living. <a href="register.html">Book your stay today!</a> </p>
+
+            <h2>Hostel Rules</h2>
+            <p> - Students should not use any electrical appliances of their own, such as induction,iron,heaters,etc</p>
+            <p> - Students should keep their rooms clean and maintain a dustbin.</p>
+            <p> - Students should not paste any type of banners or posters in room or in the building.</p>
+            <p> - Students should not leave hostel without informing the athourities or warden of hostel.     </p>
+            <p> - If any damage is done to the equipments of hostel such as doors,fans,geasres,light bulps,paint etc, then the student responsible for the damage has to pay for that.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="col">
+            <h4>Address :</h4>
+            108-B, V.I.P Hostel,<br>
+            Maha Laxmi Nagar, Pachod Road,<br>
+            Ambad-431204 
+        </div>
+        <div class="col">
+            <h4>Get In Touch :</h4>
+            <a href="https://wa.me/9175829471">WhatsApp</a>
+            <a href="https://www.instagram.com/umarbm1007">Instagram</a>
+            <a href="https://www.facebook.com/Umar Binmazi">Facebook</a>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    var image = ["Images/hostel-1.jpg","Images/logo.png"]; 
+    let i=0;
+    loadImg();
+    function loadImg(){
+        i++;
+        if(i>=image.length)
+         i=0;
+        document.getElementById("slideimg").src = image[i];
+        setTimeout(loadImg,3000);
+    }
+</script>

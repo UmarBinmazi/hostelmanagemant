@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>candidate login - VIP Hostel Ambad</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(2, 7, 17);
+        color: aliceblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body::-webkit-scrollbar{
+        width: 1px;
+    }
+    header{
+        padding-right: 10px;
+        background: black;
+        display: flex;
+        align-items: center;
+        place-content: space-between;
+    }
+    header .logo img {
+        height: 90px;
+    }
+    header nav a{
+        padding: 7px;
+        color:aliceblue;
+        text-decoration: none;
+    }
+    header nav a:hover{
+        color: rgb(32, 224, 224);
+    }
+
+    .container{
+        padding: 20px 0;
+        width: 80%;
+        margin: auto;
+    }
+    .container form{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .container form input{
+        width: 100%;
+        height:37px;
+        border-radius: 7px;
+        border: none;
+        font-size: 12pt;
+    }
+    input[type=submit]{
+        color: aliceblue;
+        background-color: green;
+    }
+    p>a{
+        color: aqua;
+    }
+    footer{
+        padding: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        place-content: center;
+        gap: 30px;
+        background-color: #000000;
+    }
+    footer .col{
+        display: flex;
+        flex-direction: column;
+    }
+    footer a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    @media screen and (max-width:750px){
+        footer{
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <header>
+        <div class="logo"> <img src="Images/logo.png" alt="" loading="lazy"></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form action="php/authentication.php" method="post">
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="" placeholder="Email" required>
+                </div>
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="" placeholder="Password" required>
+                </div>
+
+                <input type="submit" name="login" value="Login">
+                <p>Get Admission...<a href="register.html">Click here</a></p>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="col">
+            <h4>Address :</h4>
+            108-B, V.I.P Hostel,<br>
+            Maha Laxmi Nagar, Pachod Road,<br>
+            Ambad-431204 
+        </div>
+        <div class="col">
+            <h4>Get In Touch :</h4>
+            <a href="https://wa.me/9175829471">WhatsApp</a>
+            <a href="https://www.instagram.com/umarbm1007">Instagram</a>
+            <a href="https://www.facebook.com/Umar Binmazi">Facebook</a>
+        </div>
+    </footer>
+</body>
+</html>
